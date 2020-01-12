@@ -81,6 +81,7 @@ has the values you need for your database connection.
  ## Want To Thank Me?
  A Github star will be perfect. Cheers!
 
+Please feel free to contribute
 
 
 
