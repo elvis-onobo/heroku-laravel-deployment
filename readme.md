@@ -1,6 +1,4 @@
-What you find in this document are:
-
-#Steps to deploy Laravel app to Heroku with ease
+# Steps to deploy Laravel app to Heroku with ease
 
 After adding and commiting to git
 Make sure you have heroku CLI installed
