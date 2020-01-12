@@ -78,8 +78,8 @@ has the values you need for your database connection.
  
  Once again, I hope this helps you.
  
- ## How Do I Thank You?
- A Github star will be fine. Cheers!
+ ## Want To Thank Me?
+ A Github star will be perfect. Cheers!
 
 
 
