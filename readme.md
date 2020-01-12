@@ -48,3 +48,40 @@ And commit them
 And then push to Heroku
 
 ``` git push heroku master ```
+
+Go to *Resources* and create a database addon. I use ClearDB and I think you should too.
+
+After that, If you visit the app at this point you will get an error 500. If you see that then you are on track.
+Go to *Settings* and hit the *Reveal Config Vars* button
+
+You can add your .env settings from here. *Where you see key and value input fields* or you can use the command line.
+When you are done,
+
+enter the code below in your cmd to get your database config keys.
+```heroku config```  
+
+You will see the config values you entered and then you will see another value CLEARDB_DATABASE_URL. The CLEARDB_DATABASE_URL
+has the values you need for your database connection.
+
+ ```heroku config:set DATABASE_URL='mysql://DB_USERNAME:DB_PASSWORD@DB_HOST/DB_DATABASE?reconnect=true'```
+ 
+ As represented in the string above. The value in the position of DB_USERNAME is your database username and its the same for
+ the other values too. I generally use the cmd to add this part cause first time I used the GUI the vars got rejected. So...
+ 
+ ```heroku config:add DB_USERNAME=jghk54fsff56``` whatever your username is. DO same for the others
+ 
+ You can now go back to the config variables button and you will see your variables.
+ 
+ Lastly, you can run the migrations
+ 
+ ```heroku run php artisan migrate```.
+ 
+ Once again, I hope this helps you.
+ 
+ ## How Do I Thank You?
+ A Github star will be fine. Cheers!
+
+
+
+
+
