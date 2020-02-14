@@ -58,6 +58,7 @@ You can add your .env settings from here. *Where you see key and value input fie
 When you are done,
 
 enter the code below in your cmd to get your database config keys.
+
 ```heroku config```  
 
 You will see the config values you entered and then you will see another value CLEARDB_DATABASE_URL. The CLEARDB_DATABASE_URL
@@ -80,11 +81,14 @@ has the values you need for your database connection.
  
  #NB
  You can rename your project using the following code in command line
- ```heroku apps:rename newname --app oldname```
+
+```heroku apps:rename newname --app oldname```
  
  If you cloned your project from a github repo, you need to run these codes for Heroku to initialize your project as a Heroku app
- ```git remote rm heroku```
- ```heroku git:remote -a newname```
+
+```git remote rm heroku```
+
+```heroku git:remote -a newname```
 
  
  ## Want To Thank Me?
