@@ -78,6 +78,15 @@ has the values you need for your database connection.
  
  Once again, I hope this helps you.
  
+ #NB
+ You can rename your project using the following code in command line
+ ```heroku apps:rename newname --app oldname```
+ 
+ If you cloned your project from a github repo, you need to run these codes for Heroku to initialize your project as a Heroku app
+ ```git remote rm heroku```
+ ```heroku git:remote -a newname```
+
+ 
  ## Want To Thank Me?
  A Github star will be perfect. Cheers!
 
