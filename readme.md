@@ -11,7 +11,7 @@ NB: It will give your app a wierd name.
 
 ``` heroku create ```
 
-Create Procfile. This file is very important and have the abillity to impact your life negatively if you fail to onfigure it properly.
+Create Procfile. This file is very important and has the abillity to impact your life negatively if you fail to configure it properly.
 
 use the following command in your CLI. Then check the Procfile and remove the
 quotation("") marks around the string.
@@ -20,7 +20,7 @@ quotation("") marks around the string.
 
 If you don't remove the quotes, Heroku may not append the public/ directive.
 
-Clear your cache. This is because the is an anticipated issue where a Laravel 
+Clear your cache. This is because there is an anticipated issue where a Laravel 
 package class will not be found.
 
 ``` php artisan cache:clear ```
