@@ -90,6 +90,11 @@ has the values you need for your database connection.
 
 ```heroku git:remote -a newname```
 
+## Running Laravel Commands on Heroku
+You can run Laravel commands on Heroku using the ```heroku run``` as shown below:
+```heroku run php artisan migrate```
+
+
  
  ## Want To Thank Me?
  A Github star will be perfect. Cheers!
