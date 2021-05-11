@@ -94,10 +94,18 @@ has the values you need for your database connection.
 You can run Laravel commands on Heroku using the ```heroku run``` as shown below:
 ```heroku run php artisan migrate```
 
+## Working With Passport
+If you are using Laravel Passport for authentication and you get errors with the finding your secret key from the file system, try removing these from your .env
+ 
+```
+PASSPORT_PERSONAL_ACCESS_CLIENT_ID="client-id-value"
+PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET="unhashed-client-secret-value"
+```
+Also, run the following command ```php artisan passport:install``` or ```php artisan passport:install --force``` if the oauth files already exist.
 
  
- ## Want To Thank Me?
- A Github star will be perfect. Cheers!
+## Want To Thank Me?
+A Github star will be perfect. Cheers!
 
 Please feel free to contribute
 
